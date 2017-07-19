@@ -19,6 +19,12 @@ $(function() {
     });
   }
 
+  if (isMobile) {
+    $videos.on('click', function() {
+      $(this).find('video').get(0).play();
+    });
+  }
+
   $(window).on('resize', function() {
     if (!resizeTimer) {
       resizeTimer = setTimeout(updateVideosHeight, 200);
