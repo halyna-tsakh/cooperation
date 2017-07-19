@@ -1,0 +1,167 @@
+/* Layout */
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: inherit;
+  color: inherit;
+}
+
+body {
+  font-family: Rubik, 'sans-serif';
+  cursor: default;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 40px;
+  color: #506773;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #6B8A99;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 300;
+  margin: -30px 0 40px;
+  color: #bbb;
+  text-align: center;
+}
+
+#layout {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#content {
+  width: 100%;
+  max-width: 840px;
+  padding: 0 20px;
+}
+
+/* Gallery */
+
+#gallery .tiles {
+  display: flex;
+  justify-content: space-between;
+}
+
+#gallery .tile {
+  width: 30%;
+  height: 200px;
+}
+
+#gallery .tile .image {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: no-repeat center center;
+  background-size: cover;
+  transition: opacity 0.5s;
+}
+
+#gallery .tile .image.hidden {
+  z-index: 2;
+  opacity: 0;
+}
+
+#gallery .swiper-container {
+  display: none;
+  width: 100%;
+  height: 400px;
+}
+
+#gallery .swiper-container .image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: no-repeat center center;
+  background-size: cover;
+  transition: opacity 0.5s;
+}
+
+#gallery .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: .6;
+}
+
+#gallery .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  #gallery .swiper-container {
+    display: block;
+  }
+
+  #gallery .tiles {
+    display: none;
+  }
+}
+
+/* Video Gallery */
+
+#videoGallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+#videoGallery .video {
+  width: 48%;
+  height: 200px;
+}
+
+#videoGallery .video {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  #videoGallery {
+    flex-wrap: wrap;
+  }
+
+  #videoGallery .video {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Call link */
+
+#call {
+  margin: 40px 0;
+  text-align: center;
+}
+
+#call a {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  padding-left: 35px;
+  background: url('../images/phone.png') no-repeat left center transparent;
+  color: #506773;
+  text-decoration: none;
+}
