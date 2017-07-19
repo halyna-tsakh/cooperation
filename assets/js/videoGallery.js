@@ -20,9 +20,7 @@ $(function() {
   }
 
   if (isMobile) {
-    $videos.on('click', function() {
-      $(this).find('video').get(0).play();
-    });
+    $videos.find('video').prop('controls', true);
   }
 
   $(window).on('resize', function() {
