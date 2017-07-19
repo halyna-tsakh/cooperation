@@ -121,6 +121,14 @@ h3 {
   }
 }
 
+.is-mobile #gallery .swiper-container {
+  display: block;
+}
+
+.is-mobile #gallery .tiles {
+  display: none;
+}
+
 /* Video Gallery */
 
 #videoGallery {
