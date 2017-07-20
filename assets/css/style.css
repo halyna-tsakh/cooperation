@@ -217,6 +217,11 @@ h3 {
   text-align: justify;
 }
 
+.is-mobile #aboutTfp .info {
+  width: 100%;
+  padding: 0 20px;
+}
+
 #aboutTfp .info a[href] {
   color: #087299;
 }
