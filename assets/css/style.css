@@ -168,8 +168,67 @@ h3 {
   font-size: 30px;
   font-weight: 300;
   letter-spacing: 4px;
-  padding-left: 35px;
-  background: url('../images/phone.png') no-repeat left center transparent;
+  border-bottom: 1px dashed #506773;
   color: #506773;
   text-decoration: none;
+}
+
+#call a:hover {
+  border-color: transparent;
+}
+
+#call a:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 30px;
+  height: 35px;
+  left: -35px;
+  background: url('../images/phone.png') no-repeat left center transparent;
+}
+
+/* About TFP */
+
+#aboutTfp {
+  margin-bottom: 40px;
+}
+
+#aboutTfp .caption-container {
+  text-align: center;
+}
+
+#aboutTfp .caption-container a {
+  font-size: 25px;
+  font-weight: 300;
+  color: #506773;
+  cursor: pointer;
+  border-bottom: 1px dashed #506773;
+}
+
+#aboutTfp .caption-container a:hover {
+  border-color: transparent;
+}
+
+#aboutTfp .info {
+  display: none;
+  width: 600px;
+  margin: 20px auto 0;
+  color: #32444D;
+  text-align: justify;
+}
+
+#aboutTfp .info a[href] {
+  color: #087299;
+}
+
+#aboutTfp .info a[href]:hover {
+  text-decoration: none;
+}
+
+#aboutTfp .info p + p {
+  margin-top: 25px;
+}
+
+#aboutTfp.open .info {
+  display: block;
 }
