@@ -20,7 +20,10 @@ $(function() {
   }
 
   if (isMobile) {
-    $videos.find('video').prop('controls', true);
+    $videos.find('video')
+      .prop('autoplay', false)
+      .prop('preload', 'none')
+      .prop('controls', true);
   }
 
   $(window).on('resize', function() {
