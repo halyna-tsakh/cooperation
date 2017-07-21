@@ -6,7 +6,7 @@ $(function() {
     $container.toggleClass('open');
 
     if ($container.hasClass('open')) {
-      $('#layout').scrollTop(500);
+      $('#layout').scrollTop(2000);
     }
   });
 });

@@ -111,6 +111,11 @@ h3 {
   opacity: 1;
 }
 
+.is-mobile #gallery .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+}
+
 @media screen and (max-width: 1300px) {
   #gallery .swiper-container {
     display: block;
@@ -168,7 +173,7 @@ h3 {
   font-size: 30px;
   font-weight: 300;
   letter-spacing: 4px;
-  border-bottom: 1px dashed #506773;
+  border-bottom: 1px dashed transparent;
   color: #506773;
   text-decoration: none;
 }
@@ -185,6 +190,18 @@ h3 {
   height: 35px;
   left: -35px;
   background: url('../images/phone.png') no-repeat left center transparent;
+  background-size: contain;
+}
+
+.is-mobile #call a {
+  font-size: 20px;
+  border-color: #506773;
+}
+
+.is-mobile #call a:before {
+  width: 25px;
+  height: 20px;
+  top: 3px;
 }
 
 /* About TFP */
