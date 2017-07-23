@@ -6,7 +6,10 @@ $(function() {
   var $swiper = $('.swiper-container');
 
   function displayPortion() {
-    portion = Number(!portion);
+    ++portion;
+    if (portion > 2) {
+      portion = 0;
+    }
     $tiles.find('.image');
 
     $tiles.each(function(index) {
@@ -17,7 +20,7 @@ $(function() {
       }, index * 100);
     });
 
-    setTimeout(displayPortion, 7000);
+    setTimeout(displayPortion, 2000);
   }
 
   function updateImagesHeight() {
