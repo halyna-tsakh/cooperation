@@ -20,7 +20,7 @@ $(function() {
       }, index * 100);
     });
 
-    setTimeout(displayPortion, 2000);
+    setTimeout(displayPortion, 7000);
   }
 
   function updateImagesHeight() {
